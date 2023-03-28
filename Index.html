@@ -1,17 +1,28 @@
-
+<!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>Calculator Website</title>
   </head>
   <body>
-    <h1>Welcome to my website!</h1>
-    <p>This is a paragraph of text.</p>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ul>
-    <img src="image.jpg" alt="An image">
-    <a href="https://www.example.com">Visit Example.com</a>
+    <h1>Calculator</h1>
+    <input type="text" id="result" disabled>
+    <br>
+    <button onclick="calculate()">Calculate</button>
+    <br>
+    <label for="num1">Number 1:</label>
+    <input type="number" id="num1">
+    <br>
+    <label for="num2">Number 2:</label>
+    <input type="number" id="num2">
+    <br>
+    <label for="operator">Operator:</label>
+    <select id="operator">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <br>
+    <script src="calculate.js"></script>
   </body>
 </html>
